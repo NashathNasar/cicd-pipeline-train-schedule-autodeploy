@@ -55,7 +55,7 @@ pipeline {
         }
         stage('DeployToProduction') {
             when {
-                branch 'masterr'
+                branch 'master'
             }
             environment { 
                 CANARY_REPLICAS = 0
